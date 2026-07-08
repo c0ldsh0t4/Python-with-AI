@@ -34,3 +34,23 @@ print([number[0 : length] , number[length:]])
 
 
 # Home work 3.1
+
+number1 = int(input())
+operation = input()
+number2 = int(input())
+match operation:
+    case "+":
+        print(number1 + number2)
+
+    case "-":
+        print(number1 - number2)
+
+    case "*":
+        print(number1 * number2)
+
+    case "/":
+        if number2 != 0:
+            print(number1 / number2)
+        else:
+            print("can't divide by zero")
+
