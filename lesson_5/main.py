@@ -90,9 +90,13 @@ while work == "yes":
 
 # Home Work 5.3
 
-# text = input()
-# text = text.title()
-# hashtag = "#"
-# for symbol in text:
-#     if symbol in string.punctuation and symbol != :
-#         hashtag += symbol
+text = input()
+text = text.title()
+hashtag = "#"
+for symbol in text:
+    if symbol not in string.punctuation and symbol != " ":
+        hashtag += symbol
+
+    if len(hashtag) > 140:
+        hashtag = hashtag[:140]
+print(hashtag)
