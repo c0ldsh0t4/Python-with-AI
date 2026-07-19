@@ -225,8 +225,8 @@
 # print(user_2)
 # print(users)
 #
-numbers = [1, 4, 2, 7, 4, 9, 6, 1, 4]
-print(numbers)
+# numbers = [1, 4, 2, 7, 4, 9, 6, 1, 4]
+# print(numbers)
 # append(item): додає елемент item до кінця списку
 
 # numbers.append(2222)

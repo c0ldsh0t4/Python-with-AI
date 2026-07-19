@@ -1,5 +1,4 @@
 # Home work 3.2
-from pip._internal.resolution import legacy
 
 numbers = [2 , 7 , 1 , 9 , 5]
 print(numbers)
@@ -53,4 +52,3 @@ match operation:
             print(number1 / number2)
         else:
             print("can't divide by zero")
-
