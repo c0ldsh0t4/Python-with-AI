@@ -218,3 +218,243 @@
 # print("Goodbye")
 # logged_in = True
 
+
+# secret_code= "2580"
+# menu = int(input("Choice menu: "))
+# opened = False
+# while  opened != True and menu != 0:
+#     if menu == 1:
+#       user_code = input("Enter your code: ")
+#       if user_code == secret_code:
+#          opened = True
+#          print("Safe opened!")
+#       else:
+#          print("Wrong Code!")
+#     menu = int(input("Choice menu: "))
+# print("Good bye!")
+
+# phone_password = "4321"
+# unlocked = False
+# battery = 75
+# time = "12:30"
+# menu = int(input("Choose an option: "))
+# while unlocked != True and menu != 0:
+#     if menu == 1:
+#         user_password = input("Enter your code: ")
+#         if user_password == phone_password:
+#             unlocked = True
+#             print("Phone unlocked!")
+#         else:
+#             print("Wrong password!")
+#     if menu == 2:
+#         print("Battery: " + str(battery) + "%")
+#     if menu == 3:
+#         print("Time:", time)
+#
+#     menu = int(input("Choose an option: "))
+# print("Goodbye!")
+
+# seats = 5
+# menu = int(input("Choose menu: "))
+# while menu != 0:
+#     if menu == 1:
+#         print("Buy ticket")
+#         if seats > 0:
+#            print("Ticket purchased!")
+#            seats -= 1
+#            print("Free seats: " + str(seats))
+#         else:
+#             print("No more seats!")
+#     if menu == 2:
+#      print("Free seats: " + str(seats))
+#     menu = int(input("Choose menu: "))
+# print("Goodbye!")
+
+
+# lives = 3
+# menu = int(input("Choose your option: "))
+# while menu != 0:
+#     if menu == 1:
+#         if lives > 0:
+#             lives -= 1
+#             print("lives: " + str(lives))
+#             print("You lost one life!")
+#         else:
+#             print("Game Over!")
+#     if menu == 2:
+#         print ("lives: " + str(lives))
+#     menu = int(input("Choose your option: "))
+# print("Goodbye!")
+
+# balance = 1000
+# menu = int(input("Enter your choice: "))
+# while menu != 0:
+#     if menu == 1:
+#         deposit = int(input("Enter your deposit: "))
+#         if deposit > 0:
+#             balance += deposit
+#         print("Money added")
+#         print("New balance: " + str(balance))
+#     if menu == 2:
+#         withdraw = int(input("Enter your withdraw: "))
+#         if withdraw > balance:
+#           print("Not enough money!")
+#         if withdraw <= balance:
+#             balance -= withdraw
+#             print("Money withdrawn ")
+#
+#         print("You balance: " + str(balance))
+#     if menu == 3:
+#         print("Balance: " + str(balance))
+#     menu = int(input("Enter your choice: "))
+# print("Goodbye")
+
+
+# free_places = 5
+# menu = int(input("Enter you choice: "))
+# while menu != 0:
+#     if menu == 1:
+#         if free_places > 0:
+#            free_places -= 1
+#            print("Car entered!")
+#            print("free places: " + str(free_places))
+#         else:
+#            print("Parking is full!")
+#     if menu == 2:
+#         print("Free places: " + str(free_places))
+#
+#     menu = int(input("Enter you choice: "))
+# print("Goodbye")
+
+# secret_code = "1234"
+# attempts = 3
+# opened = False
+# menu = int(input("Enter menu: "))
+# while menu != 0:
+#     if menu == 1:
+#         if opened == True:
+#             print("Lock is already opened!")
+#         if opened == False:
+#             if attempts > 0:
+#                user_code = input("Enter code: ")
+#                if user_code == secret_code:
+#                   opened = True
+#                   print("Lock opened!")
+#                else:
+#                   attempts -= 1
+#                   print("Wrong code!")
+#                   print("Attempts left: " + str(attempts))
+#             else:
+#                   print("No attempts left!")
+#     if menu == 2:
+#         print("You have: " + str(attempts) + " attempts")
+#
+#     menu = int(input("Enter menu: "))
+# print("Goodbye!")
+
+
+# rooms = 3
+# menu = int(input("Enter you choice: "))
+# while menu != 0:
+#     if menu == 1:
+#         if rooms > 0:
+#             take_room = int(input("How many rooms you need: "))
+#             if take_room <= rooms:
+#                rooms -= take_room
+#                print(f"Guest checked in!")
+#                print(f"Free rooms: {rooms} rooms")
+#             else :
+#                print("Not enough rooms")
+#                print(f"Only {rooms} rooms available.")
+#
+#     if menu == 2:
+#         print(f"Free rooms: {rooms} rooms")
+#
+#     menu = int(input("Enter you choice: "))
+# print("Goodbye")
+#
+# age = int(input("Enter your age: "))
+# if age < 18:
+#     print("You are not old enough")
+# elif  18 <= age <= 60:
+#     print("You are old enough to vote!")
+# else:
+#     print("You are a pensioner!")
+
+# nums1 = int(input("Enter the first number: "))
+# operation = input("Enter the operation: ")
+# nums2 = int(input("Enter the second number: "))
+# if operation == "+":
+#     print(nums1 + nums2)
+# elif operation == "-":
+#     print(nums1 - nums2)
+# elif operation == "*":
+#     print(nums1 * nums2)
+# elif operation == "/":
+#     print(nums1 / nums2)
+# else:
+#     print("Unknown operation")
+
+# menu = int(input("Choose your menu: "))
+# while menu != 0:
+#     if menu == 1:
+#         print(f"You choice  {menu}: Welcome to the Sum!")
+#         first_number = int(input("Choose your first number: "))
+#         second_number = int(input("Choose your second number: "))
+#         result = first_number + second_number
+#         print(f"Result: {result}")
+#     elif menu == 2:
+#         print(f"You choice {menu}: Welcome to the Subtrack!")
+#         first_number = int(input("Choose your first number: "))
+#         second_number = int(input("Choose your second number: "))
+#         result = first_number - second_number
+#         print(f"Result: {result}")
+#     elif menu == 3:
+#         print(f"You choice {menu}: Welcome to the Multiply!")
+#         first_number = int(input("Choose your first number: "))
+#         second_number = int(input("Choose your second number: "))
+#         result = first_number * second_number
+#         print(f"Result: {result}")
+#     elif menu == 4:
+#         print(f"You choice {menu}: Welcome to the Divide!")
+#         first_number = int(input("Choose your first number: "))
+#         second_number = int(input("Choose your second number: "))
+#         if second_number == 0:
+#             print("Error! Division by zero is not allowed.")
+#         else:
+#             result = first_number / second_number
+#             print(f"Result: {result}")
+#     elif menu == 5:
+#         print(f"You choice {menu}: Compare two numbers!")
+#         first_number = int(input("Choose your first number: "))
+#         second_number = int(input("Choose your second number: "))
+#         if first_number > second_number:
+#             print(f"The larger number is: {first_number}")
+#         elif first_number == second_number:
+#             print(f"The numbres are equal!")
+#         else:
+#             print(f"The larger number is: {second_number}")
+#     elif menu == 6:
+#         print(f"You choice {menu}: Find the largest number")
+#         first_number = int(input("Choose your first number: "))
+#         second_number = int(input("Choose your second number: "))
+#         third_number = int(input("Choose your third number: "))
+#         if first_number > second_number and first_number > third_number:
+#             print(f"The largest number is: {first_number}")
+#         elif second_number > first_number and second_number > third_number:
+#             print(f"The largest number is: {second_number}")
+#         elif third_number > first_number and third_number > second_number:
+#             print(f"The largest number is: {third_number}")
+#         else:
+#             print("The numbres are equal!")
+#     elif menu == 7:
+#         print(f"You choice {menu}: Even or Odd")
+#         number = int(input("Enter your number: "))
+#         if number % 2 == 0:
+#             print(f"{number} is even.")
+#         else:
+#             print(f"{number} is odd.")
+#     else:
+#         print(f"You choice {menu}: Invalid choice!")
+#     menu = int(input("Choose your menu: "))
+# print(f"You chose {menu} Goodbye!")
