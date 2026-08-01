@@ -458,3 +458,201 @@
 #         print(f"You choice {menu}: Invalid choice!")
 #     menu = int(input("Choose your menu: "))
 # print(f"You chose {menu} Goodbye!")
+
+
+# text = "Programming"
+# print(text[:3])
+# print(text[3:7])
+# print(text[7:])
+# print(text[:])
+# print(text[::-1])
+#
+# text = "Programming"
+# print(text.find("Java"))
+#
+# text = "Programming"
+# print(text.count("m"))
+
+# text = "    Python Programming    "
+#
+# print(text.upper())
+# print(text.strip())
+# print(text.replace("Programming", "Developer"))
+# print(text.count("m"))
+# print(text.find("Python"))
+
+# text = "Python Programming"
+# print("Python" in text)
+# .find() -- Где находится, по какому индексу начинается
+# .in (переменная) -- Спрашивает есть или нету - вернет boolen
+
+# text = input("Enter a text: ")
+# text = text.strip()
+# print(text)
+# print(text.upper())
+# print(text.count("a"))
+# if "python" in text.lower():
+#     print("Python found!")
+# else:
+#     print("Python not found!")
+
+# text = "Python"
+#
+# for i in range(len(text)):
+#     print(i, text[i])
+#
+# text = "Python"
+#
+# for letter in text:
+#     print(letter)
+#
+# fruits = ["apple", "banana", "orange"]
+#
+# for item in fruits:
+#     print(item)
+
+# text = input("Enter text: ")
+# for letter in text:
+#     if letter == "a":
+#         print(f"{letter} Found a")
+#     else:
+#         print(letter)
+
+# text = input("Enter text: ")
+# vowels = "aeiou"
+# for letter in text.lower():
+#     if letter in  vowels:
+#         print(f"{letter} -> Vowel")
+#     else:
+#         print(f"{letter} -> Consonant")
+
+#
+# text = input("Enter text: ")
+# vowels = "aeiou"
+# vowels_count = 0
+# consonants_count = 0
+# for letter in text.lower():
+#     if letter.isalpha():
+#         if letter in vowels:
+#             vowels_count += 1
+#         else:
+#             consonants_count += 1
+# print(f"Vowels: {vowels_count}")
+# print(f"Consonants: {consonants_count}")
+
+# text = ""
+# menu = -1
+# vowels = "aeiou"
+# while menu != 0:
+#     print()
+#     print("==================================")
+#     print("        TEXT ANALYZER v1.0")
+#     print("==================================")
+#     if not text:
+#         print("Current text: <No text entered>")
+#     else:
+#         print(f"Current text: {text}")
+#     print("--------------------------------------")
+#     print("1. Count vowels")
+#     print("2. Count consonants")
+#     print("3. Count letters")
+#     print("4. Count digits")
+#     print("5. Count spaces")
+#     print("6. Reverse text")
+#     print("7. Upper case")
+#     print("8. Lower case")
+#     print("9. Enter text")
+#     print("0. Exit")
+#     print("--------------------------------------")
+#     menu = int(input("Enter your choice: "))
+#     if menu == 1:
+#         if not text:
+#             print("No text found. Please enter text first!")
+#         else:
+#             vowels_count = 0
+#             for letter in text.lower():
+#                 if letter in vowels:
+#                     vowels_count += 1
+#             print("------------------------------")
+#             print(f"Vowels: {vowels_count}")
+#             print("------------------------------")
+#     elif menu == 2:
+#         if not text:
+#             print("No text found. Please enter text first!")
+#         else:
+#             print("Count consonants")
+#             consonants_count = 0
+#             for letter in text.lower():
+#                 if letter.isalpha() and letter not in vowels:
+#                     consonants_count += 1
+#             print("------------------------------")
+#             print(f"Сonsonants: {consonants_count}")
+#             print("------------------------------")
+#     elif menu == 3:
+#         if not text:
+#             print("No text found. Please enter text first!")
+#         else:
+#             print("Count letters")
+#             letters_count = 0
+#             for letter in text.lower():
+#                 if letter.isalpha():
+#                     letters_count += 1
+#             print("------------------------------")
+#             print(f"Letters: {letters_count}")
+#             print("------------------------------")
+#     elif menu == 4:
+#         if not text:
+#             print("No text found. Please enter text first!")
+#         else:
+#             print("Count digits")
+#             digits_count = 0
+#             for letter in text.lower():
+#                 if letter.isdigit():
+#                     digits_count += 1
+#             print("------------------------------")
+#             print(f"Digits: {digits_count}")
+#             print("------------------------------")
+#     elif menu == 5:
+#         if not text:
+#             print("No text found. Please enter text first!")
+#         else:
+#             print("Count spaces")
+#             spaces_count = 0
+#             for letter in text.lower():
+#                 if letter.isspace():
+#                     spaces_count += 1
+#             print("------------------------------")
+#             print(f"Spaces: {spaces_count}")
+#             print("------------------------------")
+#     elif menu == 6:
+#         if not text:
+#             print("No text found. Please enter text first!")
+#         else:
+#             print("Reverse text")
+#             reverse = ""
+#             for letter in range(len(text) -1, -1, -1):
+#                 reverse += text[letter]
+#             print("------------------------------")
+#             print(f"Reversed text: {reverse}")
+#             print("------------------------------")
+#     elif menu == 7:
+#         if not text:
+#             print("No text found. Please enter text first!")
+#         else:
+#             print("------------------------------")
+#             print(f"Upper case: {text.upper()}")
+#             print("------------------------------")
+#     elif menu == 8:
+#         if not text:
+#             print("No text found. Please enter text first!")
+#         else:
+#             print("------------------------------")
+#             print(f"Lower case: {text.lower()}")
+#             print("------------------------------")
+#     elif menu == 9:
+#         print("------------------------------")
+#         text = input("Enter new text: ")
+#         print("Text updated!")
+#         print("------------------------------")
+#     elif menu == 0:
+#         print("Goodbye!")
