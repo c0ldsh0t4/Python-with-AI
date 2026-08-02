@@ -656,3 +656,13 @@
 #         print("------------------------------")
 #     elif menu == 0:
 #         print("Goodbye!")
+
+# numbers = [12, 5, 18, 7, 25]
+#
+# maximum = numbers[0]
+# for number in numbers:
+#     if maximum < number:
+#         maximum = number
+# print(maximum)
+
+
