@@ -22,8 +22,10 @@ while menu != 0:
     print("8. Lower case")
     print("9. Enter text")
     print("10. Show words")
-    print("11. Count words")
+    print("11. Count word")
     print("12. Sort words")
+    print ("13. Reverse words")
+    print ("14. Find word index")
     print("0. Exit")
     print("--------------------------------------")
     menu = int(input("Enter your choice: "))
@@ -35,103 +37,90 @@ while menu != 0:
             for letter in text.lower():
                 if letter in vowels:
                     vowels_count += 1
-            print("------------------------------")
+            print("========== VOWELS COUNT ==========")
             print(f"Vowels: {vowels_count}")
-            print("------------------------------")
+
             input("Press Enter to continue...")
     elif menu == 2:
         if not text:
             print("No text found. Please enter text first!")
         else:
-            print("Count consonants")
             consonants_count = 0
             for letter in text.lower():
                 if letter.isalpha() and letter not in vowels:
                     consonants_count += 1
-            print("------------------------------")
-            print(f"Сonsonants: {consonants_count}")
-            print("------------------------------")
+            print("========== CONSONANTS ==========")
+            print(f"Consonants: {consonants_count}")
             input("Press Enter to continue...")
     elif menu == 3:
         if not text:
             print("No text found. Please enter text first!")
         else:
-            print("Count letters")
             letters_count = 0
             for letter in text.lower():
                 if letter.isalpha():
                     letters_count += 1
-            print("------------------------------")
+            print("========== COUNT LETTERS ==========")
             print(f"Letters: {letters_count}")
-            print("------------------------------")
             input("Press Enter to continue...")
     elif menu == 4:
         if not text:
             print("No text found. Please enter text first!")
         else:
-            print("Count digits")
             digits_count = 0
             for letter in text.lower():
                 if letter.isdigit():
                     digits_count += 1
-            print("------------------------------")
+            print("========== DIGITS ==========")
             print(f"Digits: {digits_count}")
-            print("------------------------------")
             input("Press Enter to continue...")
     elif menu == 5:
         if not text:
             print("No text found. Please enter text first!")
         else:
-            print("Count spaces")
             spaces_count = 0
             for letter in text.lower():
                 if letter.isspace():
                     spaces_count += 1
-            print("------------------------------")
+            print("========== SPACES COUNT ==========")
             print(f"Spaces: {spaces_count}")
-            print("------------------------------")
             input("Press Enter to continue...")
     elif menu == 6:
         if not text:
             print("No text found. Please enter text first!")
         else:
-            print("Reverse text")
-            reverse = ""
+            reverse_text = ""
             for letter in range(len(text) -1, -1, -1):
-                reverse += text[letter]
-            print("------------------------------")
-            print(f"Reversed text: {reverse}")
-            print("------------------------------")
+                reverse_text += text[letter]
+            print("========== REVERSE TEXT ==========")
+            print(f"Reverse: {reverse_text}")
             input("Press Enter to continue...")
     elif menu == 7:
         if not text:
             print("No text found. Please enter text first!")
         else:
-            print("------------------------------")
+            print("========== UPPER CASE ==========")
             print(f"Upper case: {text.upper()}")
-            print("------------------------------")
             input("Press Enter to continue...")
     elif menu == 8:
         if not text:
             print("No text found. Please enter text first!")
         else:
-            print("------------------------------")
+            print("========== LOWER CASE ==========")
             print(f"Lower case: {text.lower()}")
-            print("------------------------------")
+
             input("Press Enter to continue...")
     elif menu == 9:
-        print("------------------------------")
+        print("========== ENTER NEW TEXT ==========")
         text = input("Enter new text: ")
         words = text.split()
         print("Text updated!")
-        print("------------------------------")
         input("Press Enter to continue...")
     elif menu == 10:
         if not text:
             print("No text found. Please enter text first!")
         else:
             print("========== WORDS ==========")
-
             number = 0
             for word in words:
                 number += 1
@@ -165,6 +154,32 @@ while menu != 0:
                 number += 1
                 print(f"{number}: {word}")
             input("Press Enter to continue...")
+    elif menu == 13:
+        if not text:
+            print("No text found. Please enter text first!")
+        else:
+            print("========== REVERSE WORDS ==========")
+            number = 0
+            words.reverse()
+            for word in words:
+                number += 1
+                print(f"{number}: {word}")
+            input("Press Enter to continue...")
 
+    elif menu == 14:
+        if not text:
+            print("No text found. Please enter text first!")
+        else:
+            search_word = input("Enter word: ")
+            print("========== FIND WORD INDEX ==========")
+            index = words.index(search_word)
+            print(f"Word: {search_word}")
+            print(f"Index: {index}")
+            input("Press Enter to continue...")
+        # TODO(после
+        # темы
+        # try/ except)
+        #
+        # Сделать безопасный поиск слова.
     elif menu == 0:
         print("Goodbye!")
