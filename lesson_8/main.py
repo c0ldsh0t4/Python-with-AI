@@ -1,4 +1,4 @@
-# Home Work 8.1
+Home Work 8.1
 
 def add_one(some_list):
     result = ""
@@ -16,4 +16,20 @@ assert add_one([1, 2, 3, 4]) == [1, 2, 3, 5], 'Test1'
 assert add_one([9, 9, 9]) == [1, 0, 0, 0], 'Test2'
 assert add_one([0]) == [1], 'Test3'
 assert add_one([9]) == [1, 0], 'Test4'
+print("ОК")
+
+def is_palindrome(text):
+    text = text.lower()
+    text = text.replace(" ", "")
+    text = text.replace(",", "")
+    text = text.replace(":", "")
+    text = text.replace(".", "")
+    if text == text[::-1]:
+        return True
+    else:
+        return False
+assert is_palindrome('A man, a plan, a canal: Panama') == True, 'Test1'
+assert is_palindrome('0P') == False, 'Test2'
+assert is_palindrome('a.') == True, 'Test3'
+assert is_palindrome('aurora') == False, 'Test4'
 print("ОК")
