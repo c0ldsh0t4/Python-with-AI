@@ -39,6 +39,20 @@ def count_word(words, search_word):
 def find_word_index(words, search_word):
     index = words.index(search_word)
     return index
+def show_words(words):
+    number = 0
+    for word in words:
+        number += 1
+        print(f"{number}: {word}")
+
+
+def find_word_index (words, search_word):
+    try:
+        index = words.index(search_word)
+        return index
+    except ValueError:
+        return -1
+
 
 # переменные
 text = ""
@@ -47,7 +61,7 @@ menu = -1
 vowels = "aeiou"
 
 # пункты меню, которым нужен текст
-text_required = [1, 2, 3, 4, 5, 6, 10, 11, 12, 13, 14]
+text_required = [1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12, 13, 14]
 
 # основной цикл
 while menu != 0:
@@ -76,7 +90,11 @@ while menu != 0:
     print ("14. Find word index")
     print("0. Exit")
     print("--------------------------------------")
-    menu = int(input("Enter your choice: "))
+    try:
+        menu = int(input("Enter your choice: "))
+    except ValueError:
+        print("Invalid choice! Please enter a number.")
+        continue
     if menu in text_required:
         if not text:
             print("No text found. Please enter text first!")
@@ -145,10 +163,7 @@ while menu != 0:
 
     elif menu == 10:
             print("========== WORDS ==========")
-            number = 0
-            for word in words:
-                number += 1
-                print(f"{number}: {word}")
+            show_words(words)
             print("===========================")
             input("Press Enter to continue...")
 
@@ -168,31 +183,28 @@ while menu != 0:
             input("Press Enter to continue...")
 
     elif menu == 12:
-
+            words_copy = words.copy()
+            words_copy.sort()
             print("========== SORT WORDS ==========")
-            number = 0
-            words.sort()
-            for word in words:
-                number += 1
-                print(f"{number}: {word}")
+            show_words(words_copy)
             input("Press Enter to continue...")
 
     elif menu == 13:
-
+            words_copy = words.copy()
+            words_copy.reverse()
             print("========== REVERSE WORDS ==========")
-            number = 0
-            words.reverse()
-            for word in words:
-                number += 1
-                print(f"{number}: {word}")
+            show_words(words_copy)
             input("Press Enter to continue...")
 
     elif menu == 14:
             search_word = input("Enter word: ")
             print("========== FIND WORD INDEX ==========")
             result = find_word_index(words, search_word)
-            print(f"Word: {search_word}")
-            print(f"Index: {result}")
+            if result == -1:
+                print("No such word!")
+            else:
+                print(f"Word: {search_word}")
+                print(f"Index: {result}")
             input("Press Enter to continue...")
         # TODO(после
         # темы
