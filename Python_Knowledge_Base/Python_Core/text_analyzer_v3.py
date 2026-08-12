@@ -44,14 +44,23 @@ def show_words(words):
     for word in words:
         number += 1
         print(f"{number}: {word}")
-
-
+def letter_frequency(text):
+    frequency = {}
+    for letter in text:
+        if letter.isalpha():
+            if letter in frequency:
+                frequency[letter] += 1
+            else:
+                frequency[letter] = 1
+    for letter, count in frequency.items():
+        print(f"{letter}: {count}")
 def find_word_index (words, search_word):
     try:
         index = words.index(search_word)
         return index
     except ValueError:
         return -1
+
 
 
 # переменные
@@ -61,7 +70,7 @@ menu = -1
 vowels = "aeiou"
 
 # пункты меню, которым нужен текст
-text_required = [1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12, 13, 14]
+text_required = [1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12, 13, 14, 15]
 
 # основной цикл
 while menu != 0:
@@ -88,6 +97,7 @@ while menu != 0:
     print("12. Sort words")
     print ("13. Reverse words")
     print ("14. Find word index")
+    print("15. Letter frequency")
     print("0. Exit")
     print("--------------------------------------")
     try:
@@ -211,5 +221,9 @@ while menu != 0:
         # try/ except)
         #
         # Сделать безопасный поиск слова.
+    elif menu == 15:
+        print("========== LETTER FREQUENCY ==========")
+        letter_frequency(text)
+        input("Press Enter to continue...")
     elif menu == 0:
         print("Goodbye!")
