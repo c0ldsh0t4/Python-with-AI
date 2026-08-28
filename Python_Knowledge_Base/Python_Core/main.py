@@ -9,6 +9,9 @@
 # nums1 = int(input("Enter your first number: "))
 # nums2 = float(input("Enter your second number: "))
 # print(nums1 + nums2)
+# from operator import truediv
+
+# from pip._internal.commands import search
 
 # score = int(input("Enter numbers from 0 to 100: "))
 # if   90  <= score <= 100:
@@ -665,4 +668,471 @@
 #         maximum = number
 # print(maximum)
 
+# МЕТОДЫ КОТОРЫЕ ИЗМЕНЯЮТ СПИСОК
+# append() -- Добавляет элемент в конец списка
+# insert() -- Вставляет элемент по указанному индексу
+# remove() -- Удаляет первое найденое значение
+# pop() -- Удаляет элемент по индексу и возвращает его
+# sort() -- Сортирует список
+# reverse() -- Разворачивает список
 
+# МЕТОДЫ КОТОРЫЕ ВОЗВРАЩАЮТ ЗНАЧЕНИЕ
+# count() -- Считает количество одинаковых элементов
+# index() -- Возвращает индекс первого найденного элемента
+    # ВСТРОЕНЫЕ ФУНКЦИИ
+# len() -- Выводит количество элементов
+# max() -- Максимальный элемент
+# min() -- Минимальный элемент
+# pop() -- Это исключение и относится к двум,-- Удаляет элемент и возвращает его
+# Оператор in -- Проверяет наличие элемента Ответ True or False
+# if number % 2 == 0: -- Проверка четности
+#
+# numbers = [5, 8, 12, 20, 25]
+# if not numbers:
+#    print("List is empty")
+# else:
+#     removed = numbers.pop()
+#     print(f"Removed: {removed}")
+#     print(numbers)
+#
+# list1 = ["Python", "SQL"]
+#
+# list2 = list1.copy()
+
+# playlist = [
+#     "Eminem",
+#     "Linkin Park",
+#     "Imagine Dragons"
+# ]
+# song = input("Enter the name of the song: ")
+# if song in playlist:
+#     playlist.remove(song)
+#     playlist.append(song)
+#     print(playlist)
+# else:
+#     print("The song is not in the playlist")
+
+
+# tasks = ["Learn Python", "Go to Gym", "Buy Milk"]
+# task = input("What do you want? ")
+# if task in tasks:
+#     new_tasks = tasks.copy()
+#     new_tasks.remove(task)
+#     print(tasks)
+#     print(new_tasks)
+# else:
+#     print("Task not found.")
+
+# students = ["Alex", "Mike", "John"]
+# student = input("What is your name? ")
+# if student in students:
+#     students.index(student)
+#     index = students.index(student)
+#     students.insert(index, "⭐")
+#     print(students)
+
+# movies = ["Avatar", "Titanic", "Inception"]
+# movie = input("Enter movie name: ")
+# movies_copy = movies.copy()
+# if movie in movies:
+#     movies_copy.remove(movie)
+#     movies_copy.append("Watched")
+#     print(f"{movie} Watched")
+#     print(movies)
+#     print(movies_copy)
+# else:
+#     print(f"{movie}  not found")
+
+
+# users = ["Alex", "Mike", "John", "Mike"]
+# user = input("Please enter your name: ")
+# user_copy = users.copy()
+# if user  in users:
+#     index = user_copy.index(user)
+#     removed = user_copy.pop(index)
+#     remaining = user_copy.count(user)
+#
+#     print(f"Removed: {removed}")
+#     print(f"Remaining: {remaining}")
+#     print(user_copy)
+#     print(users)
+#
+#
+# else:
+#     print("User not found")
+#
+# numbers = [5, -3, 10, -8, 15, -1, 20]
+# for number in numbers:
+#     if number < 0:
+#         continue
+#     print(number)
+
+# users = ["Alex", "", "Mike", "", "John"]
+# for user in users:
+#     if user == "":
+#         continue
+#     print(user)
+
+
+
+
+# maximum = numbers[0]
+
+# numbers = [10, 20, 30, 40]
+# x = max(numbers)
+# print(x)
+
+# for number in numbers:
+#     if number > maximum: --- Поиск максимум без max()
+#         maximum = number
+# print(maximum)
+
+# minimum = numbers[0]
+# for number in numbers:
+#     if number < minimum: --- Поиск минимум без mix()
+#         minimum = number
+# print(minimum)
+
+
+# numbers = [10, 20, 30]
+# x = numbers.pop()
+# print(x)
+# print(numbers)
+
+# numbers = [8, 3, 15, 2, 10]
+# minimum = numbers[0]
+# for number in numbers:
+#     if number < minimum:
+#         minimum = number
+# x = numbers.index(minimum)
+# print(f"Minimum: {minimum}")
+# print(f"Index: {x}")
+
+# numbers = [30, 10, 20]
+#
+# x = numbers.sort()
+#
+# print(x)
+# print(numbers)
+
+
+# numbers = [5, 10, 20, 40]
+# search = int(input("Какое число найти? "))
+#
+# print(numbers.index(search))
+
+
+# numbers = [10, 20 ,30]
+# numbers.append(40)
+# print(numbers)
+
+# numbers = [10, 20 ,30, 40]
+# numbers.remove(20)
+# print(numbers)
+
+# numbers = [10, 20, 30]
+# x = numbers.pop()
+# print(x)
+# print(numbers)
+
+# numbers = [30, 10, 20]
+# numbers.sort()
+# print(numbers)
+
+
+
+
+# numbers = [5, 10, 15, 10, 20]
+# x = numbers.count(10)
+# print(x)
+
+# numbers = [50, 10, 80, 5]
+# minimum = min(numbers)
+# for number in numbers:
+#    if number == minimum:
+#        minimum = number
+#        index = numbers.index(minimum)
+# print(minimum)
+# print(index)
+
+
+# numbers = [50, 10, 80, 5]
+# minimum = min(numbers)
+# index = numbers.index(minimum)
+# print(numbers)
+# print(index)
+
+# numbers = [12, 8, 15, 3, 20]
+# minimum = numbers[0]
+# for number in numbers:
+#     if number < minimum:
+#         minimum = number
+# print(minimum)
+
+# numbers = [12, 25, 18, 40, 9]
+# maximum = numbers[0]
+# for number in numbers:
+#     if number > maximum:
+#         maximum = number
+# print(maximum)
+
+# numbers = [40, 10 ,30 ,20]
+# numbers.remove(10)
+# print(numbers)
+
+#
+# numbers = [6, 12, 3, 25, 8]
+# for number in numbers:
+#     if number % 2 == 0:
+#         print(number)
+
+# numbers = [6, 12, 3, 25, 8]
+# total = 0
+# for number in numbers:
+#     if number % 2 == 0:
+#         total += number
+# print(total)
+
+#
+# def show_menu():
+#     print("==== MENU ====")
+#     print("1. Start")
+#     print("2. Settings")
+#     print("0. Exit")
+#
+# show_menu()
+# show_menu()
+
+# def greet(name):
+#         print(f"Hello {name}")
+#
+# greet("Alex")
+# greet("Bob")
+
+# def show_user(name , age):
+#     print(f"Name: {name}, Age: {age}")
+# show_user("Alex", 18)
+# show_user("John", 23)
+
+# def multiply(a, b):
+#     return a * b
+#
+# result = multiply(4, 6)
+# print(result)
+
+
+# def add(a, b):
+#     return a + b
+#
+# print(add(10, 5))
+
+# def last_word(text):
+#     return text.split()[-1]
+
+# def square(number):
+#     return number ** 2
+# print(square(5))
+#
+# def add(a, b):
+#     return a + b
+# result = add(10, 5)
+# print(result)
+# print(add(10 , 5))
+
+# def multiply(a, b):
+#     return a * b
+# result = multiply(4, 6)
+# print(result)
+
+# def user_info(name, age):
+#     return f"Name: {name}, Age: {age}"
+# info = user_info("Alex" , 25)
+# print(info)
+
+# def count_words(text):
+#    return len(text.split())
+# result = count_words("I love Python")
+# print(result)
+
+# def first_word(text):
+#     return text.split()[0]
+# result = first_word("I love Python")
+# print(result)
+
+# def last_word(text):
+#     return text.split()[-1]
+# result = last_word("I love Python")
+# print(result)
+
+# def is_adult(age):
+#     if age >= 18:
+#         return "Adult"
+#     else:
+#         return "Not adult"
+#
+# print(is_adult(25))
+# print(is_adult(16))
+
+# def print_positive(numbers):
+#     result = []
+#     for number in numbers:
+#         if number > 0:
+#             result.append(number)
+#     return result
+# numbers = [5, -3, 10, -8, 15, -1, 20]
+# result = print_positive(numbers)
+# print(result)
+#
+# def get_even(numbers):
+#     results = []
+#     for number in numbers:
+#         if number % 2 == 0:
+#             results.append(number)
+#     return results
+#yield number*2
+# numbers = [3, 8, 11, 20, 7, 14, 5]
+# results = get_even(numbers)
+# print(results)
+
+# def double_numbers(numbers):
+#     result = []
+#     for number in numbers:
+#        result.append(number * 2)
+#     return result
+# numbers = [2, 5, 10, 3]
+# result = double_numbers(numbers)
+# print(result)
+
+# def get_long_words(words):
+#     result = []
+#     for word in words:
+#         if len(word) > 4:
+#             result.append(word)
+#     return result
+# words = ["cat", "Python", "car", "computer", "book", "hello"]
+# result = get_long_words(words)
+# print(result)
+
+# def get_even_numbers(numbers):
+#     result = []
+#     for number in numbers:
+#         if number % 2 == 0:
+#             result.append(number)
+#     return result
+#
+# numbers = [1, 4, 7, 10, 13, 20]
+# result = get_even_numbers(numbers)
+# print(result)
+
+
+# def count_uppercase(text):
+#     count = 0
+#     for letter in text:
+#         if letter.isupper():
+#             count += 1
+#     return count
+#
+# text = input("Enter text: ")
+# print(count_uppercase(text))
+
+# def count_digits(text):
+#     digits = 0
+#     for char in text:
+#         if char.isdigit():
+#             digits += 1
+#     return digits
+
+
+# frequency = {
+#     "a": 3,
+#     "b": 1,
+#     "n": 2
+# }
+#
+# frequency["c"] = 5
+# frequency["a"] += 1
+# if "n" in frequency:
+#     print("Yes")
+# print(frequency)
+
+# text = "python java python sql python java"
+# words = text.split()
+# frequency = {}
+#
+# for word in words:
+#     frequency[word] = frequency.get(word, 0) + 1
+#
+# if word not in frequency:
+#     frequency[word] = 1
+# else:
+#     frequency[word] += 1
+#
+#
+# print(text)
+# print(words)
+# print(frequency)
+
+# frequency = {
+#     "python": 3,
+#     "java": 2,
+#     "sql": 1
+# }
+# max_count = max(frequency.values())
+# for word, count in frequency.items():
+#     if count == max_count:
+#         print(word)
+
+
+# with open("test.txt", "w") as file:
+#     file.write("New text\n")
+#
+# with open("test.txt", "a") as file:
+#     file.write("Hello\nPython\n")
+#
+# with open("test.txt", "r") as file:
+#     text = file.read()
+# print(text)
+
+
+# with open("test.txt", "r") as file:
+#     line1 = file.readline()
+#     line2 = file.readline()
+# print(line1)
+# print(line2)
+#
+# with open("test.txt", "r") as file:
+#     lines = file.readlines()
+#     print(lines)
+#     for line in lines:
+#         print(line)
+
+
+# with open("test.txt", "r") as file:
+#     for line in file:
+#         print(line, end="")
+
+# with open("test.txt", "r", encoding="utf-8") as file:
+#     text = file.read()
+# print(text)
+
+# try:
+#     with open("abc.txt", "r", encoding="utf-8") as file:
+#         text = file.read()
+# except FileNotFoundError:
+#     print("File not found")
+
+# def load_text_from_file(filename):
+#     try:
+#         with open(filename, "r", encoding="utf-8") as file:
+#             return file.read()
+#     except FileNotFoundError:
+#         return "file not found"
+#
+# text = load_text_from_file("test.txt")
+# print(text)
+
+number = 17
+if number % 2 == 0:
+    print('The number is even')
+else:
+    print('The number is odd')
